@@ -4,9 +4,9 @@ algorithm and data structure
 
 Tag by Category
 
-Sort  
+Sort
 
-sort + binarySearch  
++ sort + binarySearch  
 [658.Find K Closest Elements](https://leetcode-cn.com/problems/find-k-closest-elements/)  
 
 
