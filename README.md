@@ -15,7 +15,7 @@ Sort
 [969. Pancake Sorting](https://leetcode-cn.com/problems/pancake-sorting/)
 + sort + binarySearch  
 + sort + hashMap  
-[692.Top K Frequent Words](https://leetcode-cn.com/problems/top-k-frequent-words/)
+[692.Top K Frequent Words](https://leetcode-cn.com/problems/top-k-frequent-words/)  
 [1636.Sort Array by Increasing Frequency](https://leetcode-cn.com/problems/sort-array-by-increasing-frequency/)
 + sort + Greedy  
 
