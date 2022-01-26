@@ -11,7 +11,7 @@ BinarySearch
 + BinarySearch + twoPointers  
 [658.Find K Closest Elements](https://leetcode-cn.com/problems/find-k-closest-elements/)
 
-Sort
+Sort  
 [969. Pancake Sorting](https://leetcode-cn.com/problems/pancake-sorting/)
 + sort + binarySearch  
 + sort + hashMap  
