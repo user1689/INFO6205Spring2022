@@ -1,6 +1,11 @@
 package question9;
 
-import java.util.*;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static int[] frequencySort(int[] nums) {
@@ -11,7 +16,9 @@ public class Main {
         }
         // sort
         List<Map.Entry<Integer, Integer>> tmp = new ArrayList<>(map.entrySet());
-        Collections.sort(tmp, (a1, a2) -> a1.getValue().equals(a2.getValue()) ? a2.getKey() - a1.getKey() : a1.getValue() - a2.getValue());
+        Collections.sort(tmp, (a1, a2) -> a1.getValue().equals(a2.getValue())
+                ? a2.getKey() - a1.getKey()
+                : a1.getValue() - a2.getValue());
 
         int[] res = new int[nums.length];
         int idx = 0;
@@ -23,8 +30,10 @@ public class Main {
         return res;
     }
     public static void main(String[] args) {
-        int[] element1 = new int[]{1, 9, 1 ,1, 1, 2, 2, 2, 2, 3, 4, 4, 5, 2};
+        int[] element1 = new int[]{1, 9, 1, 1, 1, 2, 2, 2, 2, 3, 4, 4, 5, 2};
         int[] ans = frequencySort(element1);
         System.out.println(Arrays.toString(ans));
     }
 }
+// time complexity O(n^2)
+// space complexity O(n)

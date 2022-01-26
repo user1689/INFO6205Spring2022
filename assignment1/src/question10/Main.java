@@ -39,7 +39,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String[] element1 = {"a", "a", "i", "love", "a", "i", "i", "love", "leetcode", "leetcode", "leetcode", "coding"};
+        String[] element1 = {"a", "a", "i", "love",
+                    "a", "i", "i", "love", "leetcode",
+                    "leetcode", "leetcode", "coding"};
 //        String a = "a";
 //        String b = "b";
 //        System.out.println(a.compareTo(b));
@@ -51,3 +53,5 @@ public class Main {
         }
     }
 }
+// time complexity O(n)
+// space complexity O(n)

@@ -53,5 +53,5 @@ public class Main {
         }
     }
 }
-// time complexity O(k)
+// time complexity O(logn)
 // space complexity O(n)

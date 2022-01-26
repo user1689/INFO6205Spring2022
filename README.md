@@ -12,6 +12,7 @@ BinarySearch
 [658.Find K Closest Elements](https://leetcode-cn.com/problems/find-k-closest-elements/)
 
 Sort
+[969. Pancake Sorting](https://leetcode-cn.com/problems/pancake-sorting/)
 + sort + binarySearch  
 + sort + hashMap  
 [692.Top K Frequent Words](https://leetcode-cn.com/problems/top-k-frequent-words/)

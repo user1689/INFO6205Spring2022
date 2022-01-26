@@ -20,7 +20,7 @@ public class Main {
         int oddIndex = 1;
         int halfLength = s.length() / 2;
         for (int i = 0; i < 26; i++) {
-            char c = (char)(i + 'a');
+            char c = (char) (i + 'a');
             while (cnt[i] > 0 && cnt[i] <= halfLength && oddIndex < reorganzieArr.length) {
                 reorganzieArr[oddIndex] = c;
                 oddIndex += 2;
@@ -39,3 +39,5 @@ public class Main {
         System.out.println(ans);
     }
 }
+// time complexity O(n)
+// space complexity O(n)
