@@ -1,6 +1,7 @@
 package question8;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -39,10 +40,21 @@ public class Main {
 
     public static void main(String[] args) {
         int[] example = {3, 2, 4, 1};
-        List<Integer> res = pancakeSort(example);
-        for (int element : res) {
-            System.out.println(element);
+        List<Integer> tmp = pancakeSort(example);
+        int[] res = new int[tmp.size()];
+        int i = 0;
+        for (int element : tmp) {
+            res[i++] = element;
         }
+        //      4 2 3 1 -> 3
+        //      1 3 2 4 -> 4
+        //      3 1 2 4 -> 2
+        //      2 1 3 4 -> 3
+        //      2 1 3 4 -> 1
+        //      1 2 3 4 -> 2
+        //      1 2 3 4 -> 1
+        //      1 2 3 4 -> 1
+        System.out.println( Arrays.toString(res));
     }
 }
 // time complexity O(n^2)

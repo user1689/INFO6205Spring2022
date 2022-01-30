@@ -23,10 +23,12 @@ public class Main {
             char c = (char) (i + 'a');
             while (cnt[i] > 0 && cnt[i] <= halfLength && oddIndex < reorganzieArr.length) {
                 reorganzieArr[oddIndex] = c;
+                cnt[i] -= 1;
                 oddIndex += 2;
             }
             while (cnt[i] > 0 && evenIndex < reorganzieArr.length) {
                 reorganzieArr[evenIndex] = c;
+                cnt[i] -= 1;
                 evenIndex += 2;
             }
         }
@@ -34,7 +36,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String example = "aaazzizbdbzsccc";
+        String example = "aazzizbdbzsccc";
         String ans = reorganizeString(example);
         System.out.println(ans);
     }

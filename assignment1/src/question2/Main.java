@@ -47,8 +47,8 @@ public class Main {
     public static void main(String[] args) {
         int[] element = {1, 2, 3, 3, 2, 3, 3};
         int[] element2 = {3, 3, 4};
-        int[] element3 = new int[]{1, 2};
-        List<Integer> actual = Main.majorityElement(element3);
+//        int[] element3 = new int[]{1, 2};
+        List<Integer> actual = Main.majorityElement(element);
         for (int tmp : actual) {
             System.out.println(tmp);
         }

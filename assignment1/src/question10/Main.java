@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Main {
-    public static List<String> topKFrequent(String[] words, int k) {
+    public static List<String> topKFrequentWords(String[] words, int k) {
         // hash
         Map<String, Integer> map = new HashMap<>();
         for (String word : words) {
@@ -39,15 +39,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String[] element1 = {"a", "a", "i", "love",
-                    "a", "i", "i", "love", "leetcode",
-                    "leetcode", "leetcode", "coding"};
+        String[] element1 = {"a", "a", "i", "love", "a", "i", "i", "love"};
 //        String a = "a";
 //        String b = "b";
 //        System.out.println(a.compareTo(b));
 //        System.out.println(b.compareTo(a));
         int k = 2;
-        List<String> ans = topKFrequent(element1, k);
+        List<String> ans = topKFrequentWords(element1, k);
         for (String s : ans) {
             System.out.println(s);
         }

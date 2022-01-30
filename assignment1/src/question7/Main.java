@@ -26,7 +26,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String order = "zcab";
+        String order = "zbc";
         String s = "aababacdzzz";
         System.out.println(customSortString(order, s));
     }
