@@ -1,6 +1,7 @@
 package question5;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -14,12 +15,12 @@ public class Main {
         }
         List<Integer> res = new ArrayList<>();
         int count = k;
-        while (count > 0) {
+        while (count != 0) {
             if (i >= 0 && j < n) {
-                if ((Math.abs(arr[i]) - x) > (Math.abs(arr[j] - x))) {
-                    res.add(arr[j++]);
-                } else {
+                if ((Math.abs(x - arr[i])) <= (Math.abs(arr[j] - x))) {
                     res.add(arr[i--]);
+                } else if (Math.abs(x - arr[i]) > Math.abs(arr[j] - x)){
+                    res.add(arr[j++]);
                 }
             } else if (i < 0) {
                 res.add(arr[j++]);
@@ -28,6 +29,8 @@ public class Main {
             }
             count -= 1;
         }
+
+        Collections.sort(res);
         return res;
     }
 
@@ -46,10 +49,10 @@ public class Main {
     public static void main(String[] args) {
         int[] element = new int[]{1, 2, 3, 4, 5};
         int k = 4;
-        int x = -1;
+        int x = 3;
         List<Integer> res = findClosestElements(element, k, x);
         for (int e : res) {
-            System.out.println(e);
+            System.out.print(e);
         }
     }
 }

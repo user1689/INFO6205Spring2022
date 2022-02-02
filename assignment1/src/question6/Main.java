@@ -1,5 +1,7 @@
 package question6;
 
+import java.util.Arrays;
+
 public class Main {
     public static String reorganizeString(String s) {
         if (s.length() < 2) {
@@ -12,7 +14,8 @@ public class Main {
             cnt[c - 'a'] += 1;
             maxCnt = Math.max(maxCnt, cnt[c - 'a']);
         }
-        if (maxCnt > (s.length() + 1 / 2)) {
+
+        if (maxCnt > ((s.length() + 1 ) / 2)) {
             return "";
         }
         char[] reorganzieArr = new char[s.length()];
@@ -36,7 +39,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String example = "aazzizbdbzsccc";
+        String example = "aaazzzab";
         String ans = reorganizeString(example);
         System.out.println(ans);
     }
