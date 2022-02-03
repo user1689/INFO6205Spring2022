@@ -1,8 +1,6 @@
-package question6;
-
 import java.util.Arrays;
 
-public class Main {
+public class question6 {
 
     public static int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);

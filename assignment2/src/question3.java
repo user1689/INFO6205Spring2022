@@ -1,23 +1,23 @@
-package question2;
+public class question3 {
 
-public class Main {
-    public static int singleNonDuplicate(int[] nums) {
+    public static int findMin(int[] nums) {
+        // find min point
         int left = 0;
         int right = nums.length - 1;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (nums[mid] == nums[mid ^ 1]) {
+            if (nums[mid] >= nums[right]) {
                 left = mid + 1;
             } else {
                 right = mid;
             }
         }
-        return left;
+        return nums[left];
     }
 
     public static void main(String[] args) {
-        int[] example = new int[]{1, 1, 2, 3, 3, 4, 4};
-        int ans = singleNonDuplicate(example);
-        System.out.println(ans);
+        int[] nums = new int[]{4, 5, 7, 1, 2, 3};
+        int minPoint = findMin(nums);
+        System.out.println(minPoint);
     }
 }

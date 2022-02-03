@@ -1,10 +1,8 @@
-package question10;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class question10 {
 
     public static List<List<Integer>>  fourSum(int[] nums, int target) {
         Arrays.sort(nums);

@@ -1,9 +1,7 @@
-package question4;
-
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-public class Main {
+public class question4 {
     public static int minMeetingRooms(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
         PriorityQueue<Integer> heap = new PriorityQueue<>();

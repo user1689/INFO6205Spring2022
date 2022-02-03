@@ -1,8 +1,6 @@
-package question5;
-
 import java.util.*;
 
-public class Main {
+public class question5 {
 
     public static int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();

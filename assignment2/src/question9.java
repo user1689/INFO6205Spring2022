@@ -1,10 +1,7 @@
-package question9;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class question9 {
     public static int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
 
         int i = 0;

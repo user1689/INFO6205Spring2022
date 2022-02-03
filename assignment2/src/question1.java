@@ -1,6 +1,4 @@
-package question1;
-
-public class Main {
+public class question1 {
 
     public static int searchInsertPosition(int[] nums, int target) {
         // bisect_left

@@ -1,9 +1,7 @@
-package question8;
-
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Main {
+public class question8 {
 
 
     public static int eraseOverlapIntervals(int[][] intervals) {
