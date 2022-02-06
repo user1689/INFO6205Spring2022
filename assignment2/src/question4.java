@@ -6,18 +6,19 @@ public class question4 {
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
         PriorityQueue<Integer> heap = new PriorityQueue<>();
 
-        for (int[] e : intervals) {
-            if (heap.size() > 0 && (heap.peek() <= e[0])) {
+        for (int[] interval : intervals) {
+            if (heap.size() > 0 && (heap.peek() <= interval[0])) {
                 heap.poll();
             }
-            heap.offer(e[1]);
+            heap.offer(interval[1]);
         }
         return heap.size();
     }
 
     public static void main(String[] args) {
         int[][] element = new int[][]{{0, 30}, {5, 10}, {15, 20}};
-        int ans = minMeetingRooms(element);
+        int[][] element2 = {{7,10},{2,4}};
+        int ans = minMeetingRooms(element2);
         System.out.println(ans);
     }
 }
