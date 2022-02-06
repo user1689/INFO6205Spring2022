@@ -11,7 +11,7 @@ public class question2 {
                 right = mid;
             }
         }
-        return left;
+        return nums[left];
     }
 
     public static void main(String[] args) {
