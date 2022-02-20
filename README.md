@@ -21,7 +21,7 @@ TwoPointers
 + TwoPointers + Greedy + Interval   
 [435.Non-overlapping Intervals](https://leetcode-cn.com/problems/non-overlapping-intervals/)  
 
-Sort(tmp)
+Sort(tmp)  
 [969.Pancake Sorting](https://leetcode-cn.com/problems/pancake-sorting/)  
 + sort + binarySearch   
 + sort + hashMap  
