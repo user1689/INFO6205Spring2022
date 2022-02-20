@@ -18,19 +18,19 @@ TwoPointers
 + TwoPointers + Interval  
 [57.Insert Interval](https://leetcode-cn.com/problems/insert-interval/)  
 [986.Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)  
-+ TwoPointers + Greedy + Interval 
++ TwoPointers + Greedy + Interval   
 [435.Non-overlapping Intervals](https://leetcode-cn.com/problems/non-overlapping-intervals/)  
 
 Sort(tmp)
 [969.Pancake Sorting](https://leetcode-cn.com/problems/pancake-sorting/)  
-+ sort + binarySearch  
++ sort + binarySearch   
 + sort + hashMap  
 [692.Top K Frequent Words](https://leetcode-cn.com/problems/top-k-frequent-words/)  
 [1636.Sort Array by Increasing Frequency](https://leetcode-cn.com/problems/sort-array-by-increasing-frequency/)  
 + sort + Greedy  
-+ sort + twoPointers
++ sort + twoPointers  
 [16.3Sum Closest](https://leetcode-cn.com/problems/3sum-closest/)  
-+ sort + pq
++ sort + pq  
 [253.Meeting Rooms II](https://leetcode-cn.com/problems/meeting-rooms-ii/)  
 
 PriorityQueue 
