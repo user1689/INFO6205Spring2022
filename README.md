@@ -44,4 +44,6 @@ Map
 Moore  
 [229_Majority Element II](https://leetcode-cn.com/problems/majority-element-ii/)  
 
- 
+LinkedList
+[part1](https://github.com/user1689/INFO6205Spring2022/tree/main/assignment3)
+[part2](https://github.com/user1689/INFO6205Spring2022/tree/main/assignment4)
