@@ -16,6 +16,33 @@ public class question2 {
         }
     }
 
+    /**
+     * when doing testing in LeetCode, please use the code in this area.
+     * just copy and paste, tks!
+    List<List<Integer>> res = new ArrayList<>();
+    public List<List<Integer>> findLeaves(TreeNode root) {
+        if (root == null) {
+            return res;
+        }
+        dfs(root);
+        return res;
+    }
+
+    public int dfs(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftHeight = dfs(root.left);
+        int rightHeight = dfs(root.right);
+        int nowLevel = Math.max(leftHeight, rightHeight) + 1;
+        if (nowLevel - 1 == res.size()) {
+            res.add(new ArrayList<>());
+        }
+        res.get(nowLevel - 1).add(root.val);
+        return nowLevel;
+    }
+    */
+
     static List<List<Integer>> res = new ArrayList<>();
     public static List<List<Integer>> findLeaves(TreeNode root) {
         if (root == null) {
