@@ -6,7 +6,7 @@ import java.util.List;
 public class question7 {
 
     // Definition for a binary tree node.
-    public static class TreeNode {
+    public class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -14,7 +14,7 @@ public class question7 {
         TreeNode(int val) { this.val = val; }
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
-            this.left = left;
+            this.left = left;7
             this.right = right;
         }
     }
@@ -22,7 +22,7 @@ public class question7 {
     // delete static when testing in LEETCODE.
     static List<Integer> tmp = new ArrayList<>();
 
-    public static int sumNumbers(TreeNode root) {
+    public int sumNumbers(TreeNode root) {
         dfs(root, root.val);
         int res = 0;
         for (Integer num : tmp) {
@@ -31,7 +31,7 @@ public class question7 {
         return res;
     }
 
-    public static void dfs(TreeNode root, int total) {
+    public void dfs(TreeNode root, int total) {
         if (root == null) {
             return;
         }
@@ -49,18 +49,18 @@ public class question7 {
 
     }
 
-
-    public static void main(String[] args) {
-        TreeNode node1 = new TreeNode(4);
-        TreeNode node2 = new TreeNode(9);
-        TreeNode node3 = new TreeNode(0);
-        TreeNode node4 = new TreeNode(5);
-        TreeNode node5 = new TreeNode(1);
-        node1.left = node2;
-        node1.right = node3;
-        node2.left = node4;
-        node2.right = node5;
-        int ans = sumNumbers(node1);
-        System.out.println(ans);
-    }
+//
+//    public static void main(String[] args) {
+//        TreeNode node1 = new TreeNode(4);
+//        TreeNode node2 = new TreeNode(9);
+//        TreeNode node3 = new TreeNode(0);
+//        TreeNode node4 = new TreeNode(5);
+//        TreeNode node5 = new TreeNode(1);
+//        node1.left = node2;
+//        node1.right = node3;
+//        node2.left = node4;
+//        node2.right = node5;
+//        int ans = sumNumbers(node1);
+//        System.out.println(ans);
+//    }
 }

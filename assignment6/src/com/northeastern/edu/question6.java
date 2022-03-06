@@ -4,7 +4,7 @@ public class question6 {
 
 
         // Definition for a binary tree node.
-        public static class TreeNode {
+        public class TreeNode {
             int val;
             TreeNode left;
             TreeNode right;
@@ -18,7 +18,7 @@ public class question6 {
         }
 
 
-        public static int countNodes(TreeNode root) {
+        public int countNodes(TreeNode root) {
             if (root == null) {
                 return 0;
             }
@@ -38,7 +38,7 @@ public class question6 {
             return left;
         }
 
-        public static int countLevel(TreeNode root) {
+        public int countLevel(TreeNode root) {
             TreeNode node = root;
             int count = 0;
             while (node.left != null) {
@@ -48,7 +48,7 @@ public class question6 {
             return count;
         }
 
-        public static boolean exist(TreeNode root, int level, int k) {
+        public boolean exist(TreeNode root, int level, int k) {
             int bits = 1 << (level - 1);
             TreeNode cur = root;
             while (bits != 0) {
@@ -67,19 +67,19 @@ public class question6 {
         }
 
 
-        public static void main(String[] args) {
-            TreeNode node1 = new TreeNode(1);
-            TreeNode node2 = new TreeNode(2);
-            TreeNode node3 = new TreeNode(3);
-            TreeNode node4 = new TreeNode(4);
-            TreeNode node5 = new TreeNode(5);
-            TreeNode node6 = new TreeNode(6);
-            node1.left = node2;
-            node1.right = node3;
-            node2.left = node4;
-            node2.right = node5;
-            node3.left = node6;
-            int res = countNodes(node1);
-            System.out.println(res);
-        }
+//        public static void main(String[] args) {
+//            TreeNode node1 = new TreeNode(1);
+//            TreeNode node2 = new TreeNode(2);
+//            TreeNode node3 = new TreeNode(3);
+//            TreeNode node4 = new TreeNode(4);
+//            TreeNode node5 = new TreeNode(5);
+//            TreeNode node6 = new TreeNode(6);
+//            node1.left = node2;
+//            node1.right = node3;
+//            node2.left = node4;
+//            node2.right = node5;
+//            node3.left = node6;
+//            int res = countNodes(node1);
+//            System.out.println(res);
+//        }
 }

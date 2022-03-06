@@ -8,7 +8,7 @@ import java.util.List;
 public class question5 {
 
     // Definition for a binary tree node.
-    public static class TreeNode {
+    public class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -22,7 +22,7 @@ public class question5 {
     }
 
 
-    public static List<List<Integer>> verticalTraversal(TreeNode root) {
+    public List<List<Integer>> verticalTraversal(TreeNode root) {
         List<int[]> tmp = new ArrayList<>();
         dfs(root, 0, 0, tmp);
         Collections.sort(tmp, new Comparator<int[]>() {
@@ -53,7 +53,7 @@ public class question5 {
         return ans;
         }
 
-        public static void dfs(TreeNode root, int row, int col, List<int[]> tmp) {
+        public void dfs(TreeNode root, int row, int col, List<int[]> tmp) {
             if (root == null) {
                 return;
             }
@@ -62,22 +62,22 @@ public class question5 {
             dfs(root.right, row + 1, col + 1, tmp);
         }
 
-        public static void main(String[] args) {
-            TreeNode node1 = new TreeNode(3);
-            TreeNode node2 = new TreeNode(9);
-            TreeNode node3 = new TreeNode(20);
-            TreeNode node4 = new TreeNode(15);
-            TreeNode node5 = new TreeNode(7);
-            node1.left = node2;
-            node1.right = node3;
-            node3.left = node4;
-            node3.right = node5;
-            List<List<Integer>> res = verticalTraversal(node1);
-            for (List<Integer> ans : res) {
-                System.out.println(ans.toString());
-            }
-
-        }
+//        public static void main(String[] args) {
+//            TreeNode node1 = new TreeNode(3);
+//            TreeNode node2 = new TreeNode(9);
+//            TreeNode node3 = new TreeNode(20);
+//            TreeNode node4 = new TreeNode(15);
+//            TreeNode node5 = new TreeNode(7);
+//            node1.left = node2;
+//            node1.right = node3;
+//            node3.left = node4;
+//            node3.right = node5;
+//            List<List<Integer>> res = verticalTraversal(node1);
+//            for (List<Integer> ans : res) {
+//                System.out.println(ans.toString());
+//            }
+//
+//        }
 
 
 }

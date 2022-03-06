@@ -3,7 +3,7 @@ package com.northeastern.edu;
 public class question1 {
 
     // Definition for a binary tree node.
-    public static class TreeNode {
+    public class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -16,10 +16,9 @@ public class question1 {
         }
     }
 
-    // delete static when testing in LEETCODE.
-    static int cnt = 0;
+    int cnt = 0;
 
-    public static int pathSum(TreeNode root, int targetSum) {
+    public int pathSum(TreeNode root, int targetSum) {
         if (root == null) {
             return 0;
         }
@@ -28,7 +27,7 @@ public class question1 {
     }
 
     // record pathSum
-    public static void path(TreeNode root, int total, int targetSum) {
+    public void path(TreeNode root, int total, int targetSum) {
         if (total == targetSum) {
             cnt += 1;
         }
@@ -45,7 +44,7 @@ public class question1 {
     }
 
     // preOrder
-    public static void search(TreeNode root, int targetSum) {
+    public void search(TreeNode root, int targetSum) {
         if (root == null) {
             return;
         }
@@ -56,15 +55,15 @@ public class question1 {
     }
 
 
-    public static void main(String[] args) {
-        TreeNode node1 = new TreeNode(4);
-        TreeNode node2 = new TreeNode(3);
-        TreeNode node3 = new TreeNode(5);
-        TreeNode node4 = new TreeNode(2);
-        node1.left = node2;
-        node2.left = node3;
-        node3.right = node4;
-        int ans = pathSum(node1, 7);
-        System.out.println(ans);
-    }
+//    public static void main(String[] args) {
+//        TreeNode node1 = new TreeNode(4);
+//        TreeNode node2 = new TreeNode(3);
+//        TreeNode node3 = new TreeNode(5);
+//        TreeNode node4 = new TreeNode(2);
+//        node1.left = node2;
+//        node2.left = node3;
+//        node3.right = node4;
+//        int ans = pathSum(node1, 7);
+//        System.out.println(ans);
+//    }
 }
