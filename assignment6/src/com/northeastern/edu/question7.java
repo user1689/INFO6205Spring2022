@@ -14,13 +14,12 @@ public class question7 {
         TreeNode(int val) { this.val = val; }
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
-            this.left = left;7
+            this.left = left;
             this.right = right;
         }
     }
 
-    // delete static when testing in LEETCODE.
-    static List<Integer> tmp = new ArrayList<>();
+    List<Integer> tmp = new ArrayList<>();
 
     public int sumNumbers(TreeNode root) {
         dfs(root, root.val);
