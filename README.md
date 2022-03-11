@@ -49,5 +49,5 @@ LinkedList
 [part2](https://github.com/user1689/INFO6205Spring2022/tree/main/assignment4)  
 
 Tree  
-[part1](https://github.com/user1689/INFO6205Spring2022/tree/main/assignment5)
+[part1](https://github.com/user1689/INFO6205Spring2022/tree/main/assignment5)  
 [part2](https://github.com/user1689/INFO6205Spring2022/tree/main/assignment6)  
