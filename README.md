@@ -50,3 +50,4 @@ LinkedList
 
 Tree  
 [part1](https://github.com/user1689/INFO6205Spring2022/tree/main/assignment5)
+[part2](https://github.com/user1689/INFO6205Spring2022/tree/main/assignment6)  
