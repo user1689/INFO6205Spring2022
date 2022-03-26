@@ -1,7 +1,5 @@
 class solution:
     def mergeInterval(self, intervals):
-        # left = intervals[0][0]
-        # right = intervals[0][1]
         stack = []
         for i in range(0, len(intervals)):
             curLeft = intervals[i][0]
