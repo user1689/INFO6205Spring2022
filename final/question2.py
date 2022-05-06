@@ -25,9 +25,9 @@ class solution:
             for j in range(col):
                 if (grid[i][j] == '1'):
                     if (i + 1 < row and grid[i+1][j] == '1'):
-                        uf.union(i*row+j, (i+1)*row+j)
+                        uf.union(i*col+j, (i+1)*col+j)
                     if (j + 1 < col and grid[i][j + 1] == '1'):
-                        uf.union(i*row+j, i*row+(j+1))
+                        uf.union(i*col+j, i*col+(j+1))
                 else:
                     cnt_ocean += 1
         return uf.size - cnt_ocean
@@ -40,10 +40,7 @@ grid = [
   ["0","0","0","0","0"]
 ]
 grid2 = [
-  ["1","1","0","0","0"],
-  ["1","1","0","0","0"],
-  ["0","0","1","0","0"],
-  ["0","0","0","1","1"]
+  ["0","1","1","0","1"]
 ]
 res = obj.numIslands(grid2)
 print(res)

@@ -14,5 +14,5 @@ obj = solution()
 s = ["eat","tea","tan","ate","nat","bat"]
 s2 = [""]
 s3 = ["a"]
-res = obj.groupAnagrams(s3)
+res = obj.groupAnagrams(s)
 print(res)
