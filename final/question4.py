@@ -25,7 +25,7 @@ class solution:
         return check(root, p, q)
     
 obj = solution()
-node1 = TreeNode(1)
+node1 = TreeNode(0)
 node2 = TreeNode(2)
 node3 = TreeNode(9)
 node4 = TreeNode(10)

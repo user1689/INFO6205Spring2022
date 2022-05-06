@@ -18,6 +18,6 @@ class solution:
 obj = solution()
 example = "aabcccccaaa"
 example2 = "ab"
-example3 = "abcdefg"
+example3 = "abcdefga"
 res = obj.compressString(example3)
 print(res)
